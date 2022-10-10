@@ -1,8 +1,8 @@
 //
 //  community_mapApp.swift
-//  Shared
+//  community-map
 //
-//  Created by Varun Giridhar on 02/10/22.
+//  Created by Varun Giridhar on 09/10/22.
 //
 
 import SwiftUI
@@ -14,4 +14,7 @@ struct community_mapApp: App {
             ContentView()
         }
     }
+    
 }
+
+
