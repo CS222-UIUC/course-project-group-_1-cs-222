@@ -1,13 +1,13 @@
 //
-//  Tests_macOS.swift
-//  Tests macOS
+//  community_mapUITests.swift
+//  community-mapUITests
 //
-//  Created by Varun Giridhar on 02/10/22.
+//  Created by Varun Giridhar on 09/10/22.
 //
 
 import XCTest
 
-class Tests_macOS: XCTestCase {
+class community_mapUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
