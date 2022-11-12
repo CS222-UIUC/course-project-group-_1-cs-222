@@ -18,9 +18,9 @@ struct ContentView: View {
 
     var body: some View {
         
-        Text("left").position(x:100, y:600)
-        Text("right").position(x:300, y:217)
-        Map(coordinateRegion: $region).frame(width: 400, height: 300).position(x:0, y:0)
+        Text("left").position(x:UIScreen.main.bounds.width/2-100, y:UIScreen.main.bounds.height/2+100)
+        Text("right").position(x:UIScreen.main.bounds.width/2+100, y:UIScreen.main.bounds.height/2)
+        Map(coordinateRegion: $region).frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height-500).position(x:UIScreen.main.bounds.width/2, y:-300)
         
     }
 }
