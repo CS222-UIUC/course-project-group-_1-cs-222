@@ -14,12 +14,12 @@ public var onGoing = false
 var valuesArray: [(Double, Double, Double)] = []
 
 struct ContentView: View {
-    @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 51.507222, longitude: -0.1275), span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5))
+    @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 51.507222, longitude: -0.1275), span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2))
 
     var body: some View {
         
-        Text("left").position(x:UIScreen.main.bounds.width/2-100, y:UIScreen.main.bounds.height/2+100)
-        Text("right").position(x:UIScreen.main.bounds.width/2+100, y:UIScreen.main.bounds.height/2)
+        Text("location").position(x:UIScreen.main.bounds.width/2-100, y:UIScreen.main.bounds.height/2+250)
+        Text("").position(x:UIScreen.main.bounds.width/2+100, y:UIScreen.main.bounds.height/2)
         Map(coordinateRegion: $region).frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height-500).position(x:UIScreen.main.bounds.width/2, y:-300)
         
     }

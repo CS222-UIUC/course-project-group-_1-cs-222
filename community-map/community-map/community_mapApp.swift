@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 @main
 struct community_mapApp: App {
     var body: some Scene {
