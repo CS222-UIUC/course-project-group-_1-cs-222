@@ -14,11 +14,14 @@ public var onGoing = false
 var valuesArray: [(Double, Double, Double)] = []
 
 struct ContentView: View {
+    Motion motion = new Motion()
+    motion.startAccelerometer();
+    motion.startGyros();
     @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 51.507222, longitude: -0.1275), span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
 
     var body: some View {
         Map(coordinateRegion: $region).frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
-        Text("center").frame(
+        Text(valuesArray).frame(
             maxWidth: .infinity,
             maxHeight: .infinity,
             alignment: .bottom)
