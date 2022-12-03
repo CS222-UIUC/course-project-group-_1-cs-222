@@ -14,7 +14,7 @@ struct community_mapApp: App {
             ContentView()
         }
     }
-    
+
 }
 
 
