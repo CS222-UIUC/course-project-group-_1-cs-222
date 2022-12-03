@@ -1,0 +1,45 @@
+{isLoaded ? (
+  <GoogleMap
+    mapContainerStyle={{ width: "100%", height: "600px" }}
+    center={{ lng: CENTER.LAT_LNG[1], lat: CENTER.LAT_LNG[0] }}
+    zoom={14}
+    onLoad={onLoad}
+    onUnmount={onUnmount}
+  >
+    {records.length > 0 ? (
+      records.map((record: Record) => (
+        <Marker
+          key={record.id}
+          position={{
+            lng: record.lat_lng.x,
+            lat: record.lat_lng.y,
+          }}
+          title={record.id}
+          onClick={() => setOpenedInfoWindowMarkerId(record.id)}
+        >
+          {openedInfoWindowMarkerId === record.id && (
+            <InfoWindow
+              onCloseClick={() => setOpenedInfoWindowMarkerId(null)}
+            >
+              <p>{record.primary_fur_color}</p>
+            </InfoWindow>
+          )}
+        </Marker>
+      ))
+    ) : (
+      <Marker
+        position={{ lng: CENTER.LAT_LNG[1], lat: CENTER.LAT_LNG[0] }}
+        title={CENTER.LABEL}
+        onClick={(_evt) => setOpenedInfoWindowMarkerId("default")}
+      >
+        {openedInfoWindowMarkerId === "default" && (
+          <InfoWindow
+            onCloseClick={() => setOpenedInfoWindowMarkerId(null)}
+          >
+            <p>{CENTER.LABEL}</p>
+          </InfoWindow>
+        )}
+      </Marker>
+    )}
+  </GoogleMap>
+) : null}
