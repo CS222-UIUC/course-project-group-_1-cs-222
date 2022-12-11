@@ -1,6 +1,7 @@
 # course-project-group-_1-cs-222
 course-project-group-_1-cs-222 created by GitHub Classroom
 
+a)
 Our project for CS 222: Software Design Lab is CommunityMap. 
 This mobile application allows users to input the location of any potholes or road damages
 they run into onto an online map for other users to see. 
@@ -13,7 +14,7 @@ users can drive safely by being aware of all road conditions
 and local governments can be aware of the condition of their roads. 
 This mobile application was built with Swift and uses the Google Firebase database for data management and storage.
 
-
+d)
 Varun took care of sensor API implementation.
 Kushal implemented the primary algorithm to evaluate the potholes.
 Varun and Kushal also took care of the user-interface of the application
