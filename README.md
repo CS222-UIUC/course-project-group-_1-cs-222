@@ -14,6 +14,14 @@ users can drive safely by being aware of all road conditions
 and local governments can be aware of the condition of their roads. 
 This mobile application was built with Swift and uses the Google Firebase database for data management and storage.
 
+c)
+## Installing / Getting started
+
+A quick introduction of the setup of the environment and code execution instructions.
+
+```shell
+```
+
 d)
 Varun took care of sensor API implementation.
 Kushal implemented the primary algorithm to evaluate the potholes.
