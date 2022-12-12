@@ -19,8 +19,13 @@ c)
 
 A quick introduction of the setup of the environment and code execution instructions.
 
-```shell
-```
+* clone the project into your system.
+* open "" on Xcode (version 14.1)
+* to run on simulator:
+  * 
+* to run on real device:
+  *
+
 
 d)
 Varun took care of sensor API implementation.
