@@ -19,7 +19,7 @@ b)
 Provides all the primary data for our application.
 The primary data consists of live location, accelerometer data, and gyroscope data.
 The libraries we used for this are CoreMotion, CoreLocation, and MapKit. 
-Our sensor inputs interact with our backend algorithm processing by segwaying the data collected in the algorithm.
+Our sensor inputs interact with our backend algorithm processing by segwaying the data collected into the algorithm.
 
 <h4> Backend Algorithm Processing </h4>
 Takes the input provided by the sensor inputs and determines if we found a pothole in a boolean format. We don't essentially use libraries in the part of our project but use our logic for determination of potholes. Our backend algorithm interacts with our database storage and the user interface.
