@@ -14,6 +14,23 @@ users can drive safely by being aware of all road conditions
 and local governments can be aware of the condition of their roads. 
 This mobile application was built with Swift and uses the Google Firebase database for data management and storage.
 
+b)
+<h4> Sensor Inputs
+Provides all the primary data for our application.
+The primary data consists of live location, accelerometer data, and gyroscope data.
+The libraries we used for this are CoreMotion, CoreLocation, and MapKit. 
+Our sensor inputs interact with our backend algorithm processing by segwaying the data collected in the algorithm.
+
+<h4> Backend Algorithm Processing 
+Takes the input provided by the sensor inputs and determines if we found a pothole in a boolean format. We don't essentially use libraries in the part of our project but use our logic for determination of potholes. Our backend algorithm interacts with our database storage and the user interface.
+
+<h4> Database Storage
+We use MySQL and Firebase to store the location and other primary data of a found pothole.
+
+<h5> User Interface on iOS
+We use libraries such as Swift Storyboards to make our user-interface simpler and more user-friendly. It interactively displays our backend's work such as putting a pin on a pothole live and also does the job of showcasing all the potholes in the chosen area.
+
+
 c)
 ## Installing / Getting started
 
