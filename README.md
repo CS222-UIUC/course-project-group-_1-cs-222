@@ -37,12 +37,11 @@ c)
 A quick introduction of the setup of the environment and code execution instructions.
 
 * clone the project into your system.
-* open "" on Xcode (version 14.1)
+* open "/course-project-group-_1-cs-222/community-map-release-1.0/community-map-release-1.0.xcodeproj/project.xcworkspace" on Xcode (version 14.1)
 * to run on simulator:
-  * 
+  click 'Run' and make sure it runs on an emulator downloaded on your swift 
 * to run on real device:
-  *
-
+  * click 'Run' and make sure it runs on a connected device making sure Developer settigns are enabled on it.
 
 d)
 Varun took care of sensor API implementation.
